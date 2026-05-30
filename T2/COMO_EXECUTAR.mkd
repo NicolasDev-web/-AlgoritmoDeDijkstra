@@ -1,0 +1,42 @@
+# Como Executar a Solução
+
+Este guia explica as diferentes formas de executar o arquivo `main.py` contendo a solução do algoritmo de Dijkstra, dependendo do terminal que você está utilizando.
+
+## Pré-requisitos
+Certifique-se de que o **Python 3** está instalado na sua máquina. Você pode verificar executando:
+```bash
+python --version
+```
+
+## 1. Executando no Linux, macOS ou Windows CMD
+Se você estiver usando o terminal padrão do Linux, do macOS, ou o **Prompt de Comando (CMD)** do Windows, o operador de redirecionamento `<` funciona normalmente:
+
+```bash
+python T2/src/main.py < T2/dados/entradas_do_problema.txt
+```
+
+## 2. Executando no Windows PowerShell (VS Code)
+Se você estiver utilizando o **PowerShell** (que é o terminal padrão integrado no VS Code no Windows), o uso de `<` retornará um erro dizendo que o operador é reservado. 
+
+Para rodar no PowerShell, utilize uma das alternativas abaixo:
+
+**Alternativa A (Usando `Get-Content` nativo do PowerShell):**
+```powershell
+Get-Content T2\dados\entradas_do_problema.txt | python T2\src\main.py
+```
+
+**Alternativa B (Executando via CMD embutido):**
+```powershell
+cmd /c "python T2\src\main.py < T2\dados\entradas_do_problema.txt"
+```
+
+## 3. Executando Manualmente (Copiar e Colar)
+Se preferir não usar arquivos de texto para a entrada, você pode iniciar o programa e colar os dados no console:
+
+1. Execute o script diretamente:
+   ```bash
+   python T2/src/main.py
+   ```
+2. O terminal ficará aguardando a entrada.
+3. Copie todo o conteúdo do arquivo `T2/dados/entradas_do_problema.txt` e cole no terminal.
+4. Pressione `Enter`. Se o programa não processar imediatamente (dependendo do terminal), pressione `Ctrl+Z` (no Windows) ou `Ctrl+D` (no Linux/Mac) seguido de `Enter` para indicar o fim da leitura (EOF).
