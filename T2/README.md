@@ -4,7 +4,7 @@
 
 **Nome do Problema:** Shortest Routes I  
 **Link do Problema:** [https://cses.fi/problemset/task/1671](https://cses.fi/problemset/task/1671)  
-**Integrantes do Grupo:** [Preencher com os nomes dos alunos]  
+**Integrantes do Grupo:** NICOLAS DOS SANTOS XAVIER / MARCELO DE MAGALHÃES RODRIGUES FILHO / JOÃO PEDRO MENDES MOREIRA  
 **Linguagem Utilizada:** Python 3  
 
 ---
@@ -73,6 +73,4 @@ Esta linha assegura que distâncias desatualizadas (que foram empurradas para a 
 
 ## Evidência de Accepted
 
-*Atenção: O grupo deve submeter a solução em [https://cses.fi/](https://cses.fi/), tirar um printscreen do status "Accepted" (Aceito) na plataforma e salvar o arquivo como `accepted.png` dentro da pasta `T2/evidencias/`.*
-
-![Accepted](evidencias/accepted.png)
+![Accepted](evidencias/Capturar.PNG)
