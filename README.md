@@ -71,6 +71,4 @@ Esta linha assegura que distâncias desatualizadas (que foram empurradas para a 
 
 ---
 
-## Evidência de Accepted
-
-![Accepted](evidencias/Capturar.PNG)
+![Accepted](T2/evidencias/Capturar.PNG)
