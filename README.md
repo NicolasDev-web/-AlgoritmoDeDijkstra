@@ -6,7 +6,7 @@
 **Link do Problema:** [https://cses.fi/problemset/task/1671](https://cses.fi/problemset/task/1671)  
 **Integrantes do Grupo:** NICOLAS DOS SANTOS XAVIER / MARCELO DE MAGALHÃES RODRIGUES FILHO / JOÃO PEDRO MENDES MOREIRA  
 **Linguagem Utilizada:** Python 3  
-
+**Link do Slide:** https://canva.link/ny5uw9nuu00zvyy 
 ---
 
 ## Como Executar a Solução
