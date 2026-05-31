@@ -7,6 +7,7 @@
 **Integrantes do Grupo:** NICOLAS DOS SANTOS XAVIER / MARCELO DE MAGALHÃES RODRIGUES FILHO / JOÃO PEDRO MENDES MOREIRA  
 **Linguagem Utilizada:** Python 3  
 **Link do Slide:** https://canva.link/ny5uw9nuu00zvyy 
+
 ---
 
 ## Como Executar a Solução
@@ -32,7 +33,7 @@ O problema "Shortest Routes I" nos pede para encontrar a menor distância de uma
 
 **Representação Adotada:**
 Foi escolhida a **Lista de Adjacência**. Utilizamos um vetor `adj` onde o índice representa a cidade de origem e armazena uma lista de tuplas `(destino, peso)`. 
-A lista de adjacência é a melhor escolha porque $N \le 10^5$ e $M \le 2 \cdot 10^5$, o que caracteriza um grafo esparso (uma Matriz de Adjacência causaria estouro de memória, excedendo os limites de complexidade de espaço com $10^{10}$ elementos).
+A lista de adjacência é a melhor escolha porque $N \le 10^5$ e $M \le 2 \cdot 10^5$, o que caracteriza um grafo esparso (uma Matriz de Adjacência causaria estouro de memória, excedendo os limites).
 
 ---
 
@@ -40,7 +41,7 @@ A lista de adjacência é a melhor escolha porque $N \le 10^5$ e $M \le 2 \cdot 
 
 Utilizamos o **Algoritmo de Dijkstra**. O Dijkstra é a escolha ideal e padrão para encontrar o caminho mais curto a partir de uma origem única (Single-Source Shortest Path) em grafos com arestas de peso não-negativo.
 
-A implementação usa uma **Fila de Prioridade Mínima (Min-Heap)** (`heapq` nativo do Python) para sempre processar o vértice com a menor distância acumulada até o momento de forma eficiente. O vetor de distâncias (`dist`) foi inicializado com um valor suficientemente grande (`10**18`) simulando o infinito, de forma a não estourar em virtude do acúmulo de arestas que podem pesar até $10^9$.
+A implementação usa uma **Fila de Prioridade Mínima (Min-Heap)** (`heapq` nativo do Python) para sempre processar o vértice com a menor distância acumulada até o momento de forma eficiente.
 
 ---
 
@@ -53,7 +54,7 @@ Entretanto, para evitar problemas de _Timeout_ (TLE) em casos com muitos relaxam
 if d > dist[u]:
     continue
 ```
-Esta linha assegura que distâncias desatualizadas (que foram empurradas para a fila antes de encontrarmos um caminho ainda mais curto para `u`) sejam ignoradas, evitando processar os vizinhos de um vértice múltiplas vezes e economizando recursos computacionais.
+Esta linha assegura que distâncias desatualizadas (que foram empurradas para a fila antes de encontrarmos um caminho ainda mais curto para `u`) sejam ignoradas, evitando processar os vizinhos de um vértice já ultrapassado.
 
 ---
 
